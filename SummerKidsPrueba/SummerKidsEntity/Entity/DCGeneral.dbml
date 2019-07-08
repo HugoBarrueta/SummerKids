@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SummerKids" Class="DCGeneralDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=REM;Initial Catalog=SummerKids;Persist Security Info=True;User ID=sa" SettingsObjectName="SummerKidsEntity.Properties.Settings" SettingsPropertyName="SummerKidsConnectionStringCarlos" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Actividad" Member="Actividad">
+    <Type Name="Actividad">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="strNombreCurso" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="dteFechaRegistro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dteHoraInicio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dteHoraFin" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idMaestros" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idCatEstadoActividad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="strDescripcion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="imaActivity" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="BonoActividad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Actividad_ActividadNinio" Member="ActividadNinio" ThisKey="id" OtherKey="idActividad" Type="ActividadNinio" />
+      <Association Name="CatEstadoActividad_Actividad" Member="CatEstadoActividad" ThisKey="idCatEstadoActividad" OtherKey="id" Type="CatEstadoActividad" IsForeignKey="true" />
+      <Association Name="Maestro_Actividad" Member="Maestro" ThisKey="idMaestros" OtherKey="id" Type="Maestro" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActividadNinio" Member="ActividadNinio">
+    <Type Name="ActividadNinio">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idNino" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idActividad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Bono" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCatEstadoActividadNino" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Actividad_ActividadNinio" Member="Actividad" ThisKey="idActividad" OtherKey="id" Type="Actividad" IsForeignKey="true" />
+      <Association Name="CatEstadoActividadNino_ActividadNinio" Member="CatEstadoActividadNino" ThisKey="idCatEstadoActividadNino" OtherKey="id" Type="CatEstadoActividadNino" IsForeignKey="true" />
+      <Association Name="Ninio_ActividadNinio" Member="Ninio" ThisKey="idNino" OtherKey="id" Type="Ninio" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CatEstadoActividad" Member="CatEstadoActividad">
+    <Type Name="CatEstadoActividad">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="strValor" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="strDescripcion" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="CatEstadoActividad_Actividad" Member="Actividad" ThisKey="id" OtherKey="idCatEstadoActividad" Type="Actividad" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CatEstadoActividadNino" Member="CatEstadoActividadNino">
+    <Type Name="CatEstadoActividadNino">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="strValor" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="strDescripcion" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="CatEstadoActividadNino_ActividadNinio" Member="ActividadNinio" ThisKey="id" OtherKey="idCatEstadoActividadNino" Type="ActividadNinio" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CatEstadoCivil" Member="CatEstadoCivil">
+    <Type Name="CatEstadoCivil">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="strValor" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="strDescripcion" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="CatEstadoCivil_Tutor" Member="Tutor" ThisKey="id" OtherKey="idCatEstadoCivil" Type="Tutor" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CatSexo" Member="CatSexo">
+    <Type Name="CatSexo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="strValor" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="strDescripcion" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="CatSexo_Ninio" Member="Ninio" ThisKey="id" OtherKey="idCatSexo" Type="Ninio" />
+      <Association Name="CatSexo_Tutor" Member="Tutor" ThisKey="id" OtherKey="idCatSexo" Type="Tutor" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CatTipoUser" Member="CatTipoUser">
+    <Type Name="CatTipoUser">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="strValor" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="strDescripcion" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="CatTipoUser_User" Member="User" ThisKey="id" OtherKey="idCatTipoUser" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EvidenciaActividad" Member="EvidenciaActividad">
+    <Type Name="EvidenciaActividad">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Maestro" Member="Maestro">
+    <Type Name="Maestro">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="strNombres" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="strAPaterno" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="strAMaterno" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Association Name="Maestro_Actividad" Member="Actividad" ThisKey="id" OtherKey="idMaestros" Type="Actividad" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ninio" Member="Ninio">
+    <Type Name="Ninio">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="strNombres" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="strAPaterno" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="strAMaterno" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="idTutor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idCatSexo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="varFoto" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="strEdad" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="TotalBono" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Ninio_ActividadNinio" Member="ActividadNinio" ThisKey="id" OtherKey="idNino" Type="ActividadNinio" />
+      <Association Name="CatSexo_Ninio" Member="CatSexo" ThisKey="idCatSexo" OtherKey="id" Type="CatSexo" IsForeignKey="true" />
+      <Association Name="Tutor_Ninio" Member="Tutor" ThisKey="idTutor" OtherKey="id" Type="Tutor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tutor" Member="Tutor">
+    <Type Name="Tutor">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="strNombres" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="strAPaterno" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="strAMaterno" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="idCatSexo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dteFechaNacimiento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="idCatEstadoCivil" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Tutor_Ninio" Member="Ninio" ThisKey="id" OtherKey="idTutor" Type="Ninio" />
+      <Association Name="CatEstadoCivil_Tutor" Member="CatEstadoCivil" ThisKey="idCatEstadoCivil" OtherKey="id" Type="CatEstadoCivil" IsForeignKey="true" />
+      <Association Name="CatSexo_Tutor" Member="CatSexo" ThisKey="idCatSexo" OtherKey="id" Type="CatSexo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="User">
+    <Type Name="User">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="strNombreUsuario" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="strPassword" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idCatTipoUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CatTipoUser_User" Member="CatTipoUser" ThisKey="idCatTipoUser" OtherKey="id" Type="CatTipoUser" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

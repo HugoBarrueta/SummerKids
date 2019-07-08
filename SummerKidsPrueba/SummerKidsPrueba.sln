@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.645
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummerKidsPrueba", "SummerKidsPrueba\SummerKidsPrueba.csproj", "{C597B4F4-8181-4ADD-94F8-2C9CFF0DCCAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummerKidsEntity", "SummerKidsEntity\SummerKidsEntity.csproj", "{28A782B0-31B0-43CC-8FE9-AF0901234045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummerKidsControl", "SummerKidsControl\SummerKidsControl.csproj", "{F053F194-4FB7-4385-8070-1899632394FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C597B4F4-8181-4ADD-94F8-2C9CFF0DCCAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C597B4F4-8181-4ADD-94F8-2C9CFF0DCCAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C597B4F4-8181-4ADD-94F8-2C9CFF0DCCAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A782B0-31B0-43CC-8FE9-AF0901234045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A782B0-31B0-43CC-8FE9-AF0901234045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A782B0-31B0-43CC-8FE9-AF0901234045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A782B0-31B0-43CC-8FE9-AF0901234045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F053F194-4FB7-4385-8070-1899632394FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F053F194-4FB7-4385-8070-1899632394FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F053F194-4FB7-4385-8070-1899632394FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F053F194-4FB7-4385-8070-1899632394FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
