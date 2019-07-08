@@ -1,0 +1,10 @@
+git init (iniciar nuevo)
+
+git remote add 'URL' (Pasar enlace y juntar)
+
+git add . (Copia todos los archivos de la carpeta a un nuevo arbol para subirlo al repositorio)
+
+git commit -m "Mensaje" (Mensaje al archivo a subir)
+
+git push origin master (El origin master la ruta )
+
