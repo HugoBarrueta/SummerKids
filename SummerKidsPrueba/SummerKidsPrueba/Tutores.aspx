@@ -3,7 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
       <!-- loader -->
-     <div class="show fullscreen" id="ftco-loader">
+
+        <div class="show fullscreen" id="ftco-loader">
             <svg class="circular" height="48px" width="48px">
                 <circle class="path-bg" cx="24" cy="24" fill="none" r="22" stroke="#eeeeee" stroke-width="4">
                 </circle>
@@ -11,8 +12,11 @@
                 </circle>
             </svg>
         </div>
+
+
      <%-- Portada de Tutores--%>
-     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');">
+
+        <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -23,6 +27,74 @@
         </div>
       </div>
     </section>
+
+    
+
+<%-- _________________ Etiqueta / Alerta / titulo _______________ --%>
+
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+
+                                        <div class="form-inline">
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                           <%-- Estado--%>
+                                             <div class="form-group">
+                                                <h3><label> Atención Favor de llenar los campos: </label></h3> &nbsp;&nbsp;&nbsp;
+                                             </div> 
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                          
+                                                   </div>  
+                                                </div>                                                                  
+                                            </div>
+                                         </div>
+                                     </div>
+                                  </div>
+                              </div>     
+
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+
+                                        <div class="form-inline">
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                           <%-- Estado--%>
+                                             <div class="form-group">
+                                                <h3><label> Direccion </label></h3> &nbsp;&nbsp;&nbsp;
+                                             </div> 
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                          
+                                                   </div>  
+                                                </div>                                                                  
+                                            </div>
+                                         </div>
+                                     </div>
+                                  </div>
+                              </div>   
+<%-- _________________ Formilario / Direccion _______________ --%>
+
         <%-- Direccion --%>
         <div class="panel panel-default">
                     <div class="panel-body">
@@ -31,65 +103,196 @@
                                 <br />
                                 <div class="panel panel-default">
                                     <div class="panel-body">
+
                                         <div class="form-inline">
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                           <%-- Estado--%>
                                              <div class="form-group">
                                                 <label>Estado: </label> &nbsp;&nbsp;&nbsp;
-                                                <asp:TextBox ID="txtDirecEstado" runat="server" CssClass="form-control input-sm" >
+                                                <asp:TextBox ID="txtDirecEstado" runat="server" CssClass="Form-Resp input-sm " >
                                                 </asp:TextBox>
-                                             </div> &nbsp;&nbsp;&nbsp;
+                                             </div> 
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                              
-
+                                             <%-- Municipio --%>
                                             <div class="form-group">
                                                 <label>Municipio: </label> &nbsp;&nbsp;&nbsp;
-                                                <asp:TextBox ID="txtDirecMunicipio" runat="server" CssClass="form-control input-sm" >
+                                                <asp:TextBox ID="txtDirecMunicipio" runat="server" CssClass="Form-Resp input-sm" >
                                                 </asp:TextBox>
                                             </div>
                                             &nbsp;&nbsp;&nbsp;
+                                            
+                                           
+                                                   </div>  
+                                                </div>                                                                  
+                                            </div>
+                                         </div>
+                                     </div>
+                                  </div>
+                              </div>     
+    
+        <%-- Direccion --%>
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
 
+                                        <div class="form-inline">
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                       
+                                            <%-- Calle--%>
                                             <div class="form-group">
-                                                <label>Calle: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                <asp:TextBox ID="txtDirecCalle" runat="server" CssClass="form-control input-sm" >
+                                                <label>Calle: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <asp:TextBox ID="TextBox6" runat="server" CssClass="Form-Resp input-sm" >
                                                 </asp:TextBox>
                                              </div>
-                                            &nbsp;&nbsp;&nbsp;
-                                            
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+                                             <%-- Colonia --%>
                                              <div class="form-group">
-                                                <label>Colonia: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                <asp:TextBox ID="txtDirecColonia" runat="server" CssClass="form-control input-sm">
+                                                <label>Colonia: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <asp:TextBox ID="TextBox7" runat="server" CssClass="Form-Resp input-sm">
                                                 </asp:TextBox>
                                              </div>
                                             &nbsp;&nbsp;
                                             
-                                            <div class="form-group">
-                                                <label>Numero Interior: </label> &nbsp;&nbsp;
-                                                <asp:TextBox ID="txtDirecInter" runat="server" CssClass="form-control input-sm" >
-                                                </asp:TextBox>
-                                             </div>
-                                            &nbsp;&nbsp;
-
-
-                                            <div class="form-group">
-                                                <label>Numero Exterior: </label> &nbsp;&nbsp;
-                                                <asp:TextBox ID="txtDirecExt" runat="server" CssClass="form-control input-sm">
-                                                </asp:TextBox>
-                                                </div>   
-                                            &nbsp;&nbsp;
-                                            
-                                            <div class="form-group">
-                                                <label>Codigo Postal: </label> &nbsp;&nbsp;
-                                                <asp:TextBox ID="txtpostal" runat="server" CssClass="form-control input-sm">
-                                                </asp:TextBox>
-                                                </div>  
                                         
                                                    </div>  
+
                                                </div>                                                                  
                                             </div>
                                          </div>
                                      </div>
                                   </div>
-                              </div>                        
-        <%-- Téléfono --%>  
+                              </div>  
+
+        <%-- Direccion --%>
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+
+                                        <div class="form-inline">
+                               
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                             <%-- Numero Interior --%>
+                                            <div class="form-group">
+                                                <label>Numero <br /> Interior: </label> &nbsp;&nbsp;
+                                                <asp:TextBox ID="TextBox8" runat="server" CssClass="Form-Resp input-sm" >
+                                                </asp:TextBox>
+                                             </div>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                             <%-- Numero exterior --%>
+                                            <div class="form-group">
+                                                <label>Numero <br /> Exterior: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <asp:TextBox ID="TextBox9" runat="server" CssClass="Form-Resp input-sm">
+                                                </asp:TextBox>
+                                                </div>   
+                                            &nbsp;&nbsp;
+                                            
+
+                                                   </div>  
+                                                </div>                                                                  
+                                            </div>
+                                         </div>
+                                     </div>
+                                  </div>
+                              </div>     
+
+        <%-- Direccion --%>
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+
+                                        <div class="form-inline">
+                               
+                                            
+                                             <%-- Codigo postal --%>
+                                            <div class="form-group">
+
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                <label>Codigo <br /> Postal: </label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                                <asp:TextBox ID="TextBox10" runat="server" CssClass="Form-Resp input-sm">
+                                                </asp:TextBox>
+                                                </div>  
+                                        
+
+                                                   </div>  
+                                                </div>                                                                  
+                                            </div>
+                                         </div>
+                                     </div>
+                                  </div>
+                              </div>     
+
+        <hr>
+
+<%-- _________________ Formilario / Teléfono / Registro de niño_______________ --%>
+
+        <%-- Titulo / Contacto --%>  
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+
+                                        <div class="form-inline">
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                           <%-- Contactos --%>
+                                             <div class="form-group">
+                                                <h3><label> Contactos </label></h3> &nbsp;&nbsp;&nbsp;
+                                             </div> 
+                                                                          
+                                                   </div>  
+                                                </div>                                                                  
+                                            </div>
+                                         </div>
+                                     </div>
+                                  </div>
+                              </div>   
+
+        <%-- Teléfono / Registro de niño --%>  
         <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="row">
@@ -99,31 +302,82 @@
                                     <div class="panel-body">
                                         <div class="form-inline">
 
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                            <%-- Celular --%>
                                              <div class="form-group">
-                                                <label>Celular: </label>
-                                                <asp:TextBox ID="txtTelCelular" runat="server" CssClass="form-control input-sm" >
+                                                <label>Celular: </label>&nbsp;&nbsp;
+                                                <asp:TextBox ID="txtTelCelular" runat="server" CssClass="Form-Resp input-sm" >
                                                 </asp:TextBox>
                                                   <asp:RegularExpressionValidator ID="validarcelular" runat="server" ControlToValidate="txtTelCelular"
                                                     ErrorMessage="Ingrese solo numeros" ForeColor="Red" ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
-                                           
                                              </div>
 
-                                            
+                                        </div>
+                                     </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+            </div>
+
+        <%-- Teléfono / Registro de niño --%>  
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="form-inline">
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                            <%-- Casa --%>
                                              <div class="form-group">
-                                                <label>Casa: </label>
-                                                <asp:TextBox ID="txtTelCasa" runat="server" CssClass="form-control input-sm" >
+                                                <label>Casa: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <asp:TextBox ID="txtTelCasa" runat="server" CssClass="Form-Resp input-sm" >
                                                 </asp:TextBox>
-                                                  <asp:RegularExpressionValidator ID="validarcasa" runat="server" ControlToValidate="txtTelCasa"
+                                                  <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtTelCasa"
                                                     ErrorMessage="Ingrese solo numeros" ForeColor="Red" ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
-                                           
-                                             </div>
+                                            </div>
 
-                                             
+                                        </div>
+                                     </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+            </div>
+
+        <%-- Teléfono / Registro de niño --%> 
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="form-inline">
+
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                             <%-- Oficina --%>
                                              <div class="form-group">
-                                                <label>Oficina: </label>
-                                                <asp:TextBox ID="txtTelOficina" runat="server" CssClass="form-control input-sm" >
+
+                                                <label>Oficina: </label> &nbsp;&nbsp;
+                                                <asp:TextBox ID="txtTelOficina" runat="server" CssClass="Form-Resp input-sm" >
                                                 </asp:TextBox>
-                                                  <asp:RegularExpressionValidator ID="validaroficina" runat="server" ControlToValidate="txtTelOficina"
+                                                  <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtTelOficina"
                                                     ErrorMessage="Ingrese solo numeros" ForeColor="Red" ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
                                            
                                              </div>
@@ -136,51 +390,171 @@
                           </div>
                       </div>
             </div>
-        <div class="panel panel-default">
+        
+        <hr>
 
-               
+<%-- _________________ Formilario / Datos Personales / Registro de niño_______________ --%>
+
+        <%-- Titulo / Datos Personales --%>  
+
+        <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="row">
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
 
+                                        <div class="form-inline">
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                           <%-- Contactos --%>
+                                             <div class="form-group">
+                                                <h3><label> Datos Personales </label></h3> &nbsp;&nbsp;&nbsp;
+                                             </div> 
+                                                                          
+                                                   </div>  
+                                                </div>                                                                  
+                                            </div>
+                                         </div>
+                                     </div>
+                                  </div>
+                              </div>   
+
+        <%-- Datos Personales / Registro de niño / Nombre --%> 
+    
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                                 <br />
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        <div class="form-inline">
+                                         
+                                        <div class="form-inline" >
 
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                            <%-- Nombre --%>
                                              <div class="form-group">
-                                                <label>Nombre: </label>
-                                                <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control input-sm">
+                                                <label>Nombre: </label>&nbsp;
+                                                <asp:TextBox ID="txtNombre" runat="server" CssClass="Form-Resp input-sm" >
                                                 </asp:TextBox>
                                                   <asp:RegularExpressionValidator ID="validarNombre" runat="server" ControlToValidate="txtNombre"
                                                     ErrorMessage="Ingrese solo letras" ForeColor="Red" ValidationExpression="[A-Za-z]*$">
                                                   </asp:RegularExpressionValidator>
                                             </div>
 
+                                                                                                                                                
+                                            <hr />  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
 
+        <%-- Datos Personales / Registro de niño / Apellido P --%> 
+
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                         
+                                        <div class="form-inline" >
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                            <%-- Apellido P --%>
                                             <div class="form-group">
-                                                <label>Apellido Paterno: </label>
-                                                <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control input-sm">
+                                                <label>Apellido <br /> Paterno: </label>&nbsp;
+                                                <asp:TextBox ID="txtAPaterno" runat="server" CssClass="Form-Resp input-sm">
                                                 </asp:TextBox>
                                                 <asp:RegularExpressionValidator ID="validarPaterno" runat="server" ControlToValidate="txtAPaterno"
                                                     ErrorMessage="Ingrese solo letras" ForeColor="Red" ValidationExpression="[A-Za-z]*$">
                                                 </asp:RegularExpressionValidator>
                                                 </div>
 
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
 
+        <%-- Datos Personales / Registro de niño / Apellido M --%> 
+
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                         
+                                        <div class="form-inline" >
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             
+                                            <%-- Apellido M --%>
                                             <div class="form-group">
-                                                <label>Apellido Materno: </label>
-                                                <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control input-sm">
+                                                <label>Apellido <br /> Materno: </label>&nbsp;
+                                                <asp:TextBox ID="txtAMaterno" runat="server" CssClass="Form-Resp input-sm">
                                                 </asp:TextBox>
                                                 <asp:RegularExpressionValidator ID="validarMaterno" runat="server" ControlToValidate="txtAMaterno"
                                                     ErrorMessage="Ingrese solo letras" ForeColor="Red" ValidationExpression="[A-Za-z]*$">
                                                 </asp:RegularExpressionValidator>
                                                 </div>
-
                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+        
+        <%-- Datos Personales / Registro de niño / Edad --%> 
+
+        <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <br />
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                         
+                                        <div class="form-inline" >
+
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                            <%-- Edad --%>
                                             <div class="form-group">
-                                                <label>Edad: </label>
-                                                <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control input-sm" >
+                                                <label>Edad: </label>&nbsp;&nbsp;
+                                                <asp:TextBox ID="txtEdad" runat="server" CssClass="Form-Resp input-sm" >
                                                 </asp:TextBox>
                                                 <asp:RegularExpressionValidator ID="validarEdad" runat="server" ControlToValidate="txtEdad"
                                                     ErrorMessage="Ingrese solo numeros" ForeColor="Red" ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
@@ -188,7 +562,6 @@
                                                 </div>
                                                                                                                                                          
                                             <hr />  
-                                          
                                         </div>
                                     </div>
                                 </div>
@@ -196,7 +569,11 @@
                         </div>
                     </div>
                 </div>    
-       <%--</div>--%>
+
+        <hr>
+
+<%-- ____________________ Datos del Niño ____________________ --%>
+
      <%-- Datos del niño registro --%>
     <section class="ftco-section">
       <div class="container">
@@ -253,6 +630,7 @@
         </div>
       </div>
     </section>
+
     <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_4.jpg);" data-stellar-background-ratio="0.5">
     	<div class="container">
     		<div class="row justify-content-center mb-5 pb-2">
@@ -305,6 +683,8 @@
         </div>
     	</div>
     </section>
+
+
      <%-- Modal del registro niño--%>
         <div class="modal fade" id="ModalRegistrarNino">
             <div class="modal-dialog">
@@ -323,20 +703,20 @@
                           <div class="form-group ">
 
                     <asp:Label ID="Label2" runat="server" Text=" Apellido Paterno"></asp:Label>
-                    <asp:TextBox ID="txtApaterno" runat="server" CssClass="form-control input-sm"
+                    <asp:TextBox ID="txtApaternoDetalle" runat="server" CssClass="form-control input-sm"
                         placeholder="Ingresa Apellido Paterno: " ></asp:TextBox>
 
                 </div>  
                           <div class="form-group ">
 
                     <asp:Label ID="Label3" runat="server" Text=" Apellido Materno"></asp:Label>
-                    <asp:TextBox ID="TxtAmaterno" runat="server" CssClass="form-control input-sm"
+                    <asp:TextBox ID="TxtAmaternoDetalle" runat="server" CssClass="form-control input-sm"
                         placeholder="Ingresa Apellido Materno: " ></asp:TextBox>
                 </div>  
                           <div class="form-group ">
 
                     <asp:Label ID="Label4" runat="server" Text="Edad"></asp:Label>
-                    <asp:TextBox ID="TxtEdad" runat="server" CssClass="form-control input-sm"
+                    <asp:TextBox ID="TxtEdadDetalle" runat="server" CssClass="form-control input-sm"
                         placeholder="Ingresa la edad: " ></asp:TextBox>
 
                 </div> 
@@ -373,6 +753,9 @@
                 </div>
             </div>
         </div>
+
+
+
         <script src="js/jquery.min.js">
         </script>
         <script src="js/jquery-migrate-3.0.1.min.js">

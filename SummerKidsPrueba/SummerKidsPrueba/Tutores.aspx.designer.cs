@@ -31,49 +31,49 @@ namespace SummerKidsPrueba {
         protected global::System.Web.UI.WebControls.TextBox txtDirecMunicipio;
         
         /// <summary>
-        /// Control txtDirecCalle.
+        /// Control TextBox6.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDirecCalle;
+        protected global::System.Web.UI.WebControls.TextBox TextBox6;
         
         /// <summary>
-        /// Control txtDirecColonia.
+        /// Control TextBox7.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDirecColonia;
+        protected global::System.Web.UI.WebControls.TextBox TextBox7;
         
         /// <summary>
-        /// Control txtDirecInter.
+        /// Control TextBox8.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDirecInter;
+        protected global::System.Web.UI.WebControls.TextBox TextBox8;
         
         /// <summary>
-        /// Control txtDirecExt.
+        /// Control TextBox9.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDirecExt;
+        protected global::System.Web.UI.WebControls.TextBox TextBox9;
         
         /// <summary>
-        /// Control txtpostal.
+        /// Control TextBox10.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtpostal;
+        protected global::System.Web.UI.WebControls.TextBox TextBox10;
         
         /// <summary>
         /// Control txtTelCelular.
@@ -103,13 +103,13 @@ namespace SummerKidsPrueba {
         protected global::System.Web.UI.WebControls.TextBox txtTelCasa;
         
         /// <summary>
-        /// Control validarcasa.
+        /// Control RegularExpressionValidator2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator validarcasa;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
         
         /// <summary>
         /// Control txtTelOficina.
@@ -121,13 +121,13 @@ namespace SummerKidsPrueba {
         protected global::System.Web.UI.WebControls.TextBox txtTelOficina;
         
         /// <summary>
-        /// Control validaroficina.
+        /// Control RegularExpressionValidator3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator validaroficina;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
         
         /// <summary>
         /// Control txtNombre.
@@ -148,13 +148,13 @@ namespace SummerKidsPrueba {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator validarNombre;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control txtAPaterno.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtAPaterno;
         
         /// <summary>
         /// Control validarPaterno.
@@ -166,13 +166,13 @@ namespace SummerKidsPrueba {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator validarPaterno;
         
         /// <summary>
-        /// Control TextBox2.
+        /// Control txtAMaterno.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtAMaterno;
         
         /// <summary>
         /// Control validarMaterno.
@@ -184,13 +184,13 @@ namespace SummerKidsPrueba {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator validarMaterno;
         
         /// <summary>
-        /// Control TextBox3.
+        /// Control txtEdad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txtEdad;
         
         /// <summary>
         /// Control validarEdad.
@@ -229,13 +229,13 @@ namespace SummerKidsPrueba {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Control txtApaterno.
+        /// Control txtApaternoDetalle.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtApaterno;
+        protected global::System.Web.UI.WebControls.TextBox txtApaternoDetalle;
         
         /// <summary>
         /// Control Label3.
@@ -247,13 +247,13 @@ namespace SummerKidsPrueba {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Control TxtAmaterno.
+        /// Control TxtAmaternoDetalle.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtAmaterno;
+        protected global::System.Web.UI.WebControls.TextBox TxtAmaternoDetalle;
         
         /// <summary>
         /// Control Label4.
@@ -265,13 +265,13 @@ namespace SummerKidsPrueba {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// Control TxtEdad.
+        /// Control TxtEdadDetalle.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtEdad;
+        protected global::System.Web.UI.WebControls.TextBox TxtEdadDetalle;
         
         /// <summary>
         /// Control FotoPerfil.
