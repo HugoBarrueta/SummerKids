@@ -1,6 +1,6 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SummerKidsPrueba.SiteMaster" %>
+﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" CodeBehind="MenuTutores.aspx.cs" Inherits="SummerKidsPrueba.MenuTutores" %>
 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -54,13 +54,13 @@
 	    <div class="container d-flex align-items-center">
 	    	<a class="navbar-brand" href="index.html">Summer Kids</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
+	        <span class="oi oi-menu"></span> Menu de tutores!
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	        	   <li class="nav-item "><a href="Principal.aspx" class="nav-link pl-0">Inicio</a></li>
             <li class="nav-item"><a href="Tutores.aspx" class="nav-link">Tutores</a></li>
-            <li class="nav-item "><a href="Maestros.aspx" class="nav-link">Talleres</a></li>
+            <li class="nav-item "><a href="Maestros.aspx" class="nav-link">Talleres Inscritos</a></li>
             <li class="nav-item"><a  class="nav-link" data-toggle="modal" href="#popUpWindow">Iniciar Sesion</a></li>
 	   
 	        </ul>
@@ -98,7 +98,7 @@
                         </div>
                         <div class="modal-footer">
                             <asp:Button ID="btncancel" runat="server" Text="Cancelar" class="btn btn-default" data-dismiss="modal" />
-                            <asp:Button ID="btnLogin" runat="server" href="Tutores.aspx"  Text="Ingresar" class="btn btn-primary" type="submit" />
+                            <asp:Button ID="btnLogin" runat="server"  Text="Ingresar" class="btn btn-primary" type="submit" />
                            
                         </div>
                    
@@ -132,7 +132,7 @@
                         </div>
                         <div class="modal-footer">
                             <asp:Button ID="Button2" runat="server" Text="Cancelar" class="btn btn-default" data-dismiss="modal" />
-                            <asp:Button ID="Button3" runat="server"  Text="Ingresar" class="btn btn-primary" href="MenuTutores.aspx"  />
+                            <asp:Button ID="Button3" runat="server"  Text="Ingresar" class="btn btn-primary" type="submit" />
                            
                         </div>
                    
@@ -199,4 +199,3 @@
 
 </body>
 </html>
-

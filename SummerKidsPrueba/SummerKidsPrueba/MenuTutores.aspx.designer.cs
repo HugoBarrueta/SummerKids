@@ -10,7 +10,7 @@
 namespace SummerKidsPrueba {
     
     
-    public partial class SiteMaster {
+    public partial class MenuTutores {
         
         /// <summary>
         /// Control Label1.
